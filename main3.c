@@ -86,7 +86,7 @@ void LCD_saveCustChar(unsigned char slot, unsigned char *array) {
         LCD_sendData(array[i]);
     }
 }
-// Wybór znaku do wy?wietlenia z tablicy
+// WybÃ³r znaku do wy?wietlenia z tablicy
 void LCD_displayCharacter(unsigned char characterCode) {
     LCD_sendData(characterCode);
 }
@@ -94,7 +94,7 @@ void LCD_displayCharacter(unsigned char characterCode) {
 void LCD_init(){
     __delay_ms(20);
     LCD_sendCommand(LCD_CONFIG);
-    __delay_us(50); // opó?nienia wynikaj? ze specyfikacji wy?wietlacza i czasu przetwarzania poszczególnych komend
+    __delay_us(50); // opÃ³?nienia wynikaj? ze specyfikacji wy?wietlacza i czasu przetwarzania poszczegÃ³lnych komend
     LCD_sendCommand(LCD_ON);
     __delay_us(50);
     LCD_sendCommand(LCD_CLEAR);
